@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Sportit</title>
 </head>
 
 <body>
-    <header>
+    <header class="flex flex-around header-page">
         <img src="./imagenes/logo.svg" alt="Logo Sportit">
         <nav>
-            <ul>
+            <ul class=" flex list-nav">
                 <li>
                     <a> Sports</a>
                 </li>
@@ -30,34 +34,36 @@
                 </li>
             </ul>
         </nav>
-        <button>Contact</button>
+        <button class="btn btn-primary">Contact</button>
     </header>
     <main>
-        <section>
+        <section class="flex flex-around">
             <img src="./imagenes/padel-intro.png" alt="Tenista">
-            <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-            <p>
-                The final Open of the 2022 World Padel Tour season is underway,
-                don't miss out on any of the action!
-            </p>
-            <button>Contact</button>
+            <div class="flex-column container-section">
+                <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
+                <p class="text-description">
+                    The final Open of the 2022 World Padel Tour season is underway,
+                    don't miss out on any of the action!
+                </p>
+                <button class="btn ">Contact</button>
+            </div>
         </section>
-        <section>
+        <section class=" flex flex-around container-pros">
             <h2>
                 What´s different between pros?
             </h2>
-            <p>
+            <p class="text-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi
                 eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.
             </p>
         </section>
-        <section>
-            <div>
-                <span>01</span>
-                <div>
+        <section class="flex container-cards">
+            <div class=" flex card">
+                <span class="number-card">01</span>
+                <div class=" flex-column container-text-card">
                     <h3>Track company-wide progress:</h3>
-                    <p>
+                    <p class="text-card">
                         Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
                         Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla.
                         Etiam vel orci rutrum, placerat quam eget, consequat dolor.
@@ -65,11 +71,11 @@
                 </div>
 
             </div>
-            <div>
-                <span>02</span>
-                <div>
+            <div class=" flex card">
+                <span class="number-card">02</span>
+                <div class=" flex-column container-text-card">
                     <h3>Advance built-in reports</h3>
-                    <p>
+                    <p class="text-card">
                         Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
                         Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla.
                         Etiam vel orci rutrum, placerat quam eget, consequat dolor.
@@ -77,11 +83,11 @@
                 </div>
 
             </div>
-            <div>
-                <span>03</span>
-                <div>
+            <div class=" flex card">
+                <span class="number-card">03</span>
+                <div class=" flex-column container-text-card">
                     <h3>Everything you need in one place</h3>
-                    <p>
+                    <p class="text-card">
                         Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
                         Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla.
                         Etiam vel orci rutrum, placerat quam eget, consequat dolor.
@@ -89,89 +95,94 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class=" flex-column flex-center container3">
             <h2>Best of the month</h2>
-            <div>
-                <img src="./imagenes/avatar-sanyo.png" alt="Perfil Sanyo">
-                <div>
-                    <h3>Sanyo</h3>
-                    <p>
-                        Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris,
-                        ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus.
-                    </p>
-                </div>
-
+            <div class=" flex container-article">
+                <article class=" flex-column deport-article">
+                    <img src="./imagenes/avatar-sanyo.png" alt="Perfil Sanyo " class="perfil-depor">
+                    <div>
+                        <h3>Sanyo</h3>
+                        <p>
+                            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris,
+                            ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                    </div>
+                </article>
+                <article class=" flex-column deport-article">
+                    <img src="./imagenes/avatar.lebron.png" alt="Perfil Lebron" class="perfil-depor">
+                    <div>
+                        <h3>Lebron</h3>
+                        <p>
+                            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris,
+                            ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                    </div>
+                </article>
+                <article class=" flex-column deport-article">
+                    <img src="./imagenes/avatar-navarro.png" alt="Perfil Navarro" class="perfil-depor">
+                    <div>
+                        <h3>Navarro</h3>
+                        <p>
+                            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris,
+                            ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                    </div>
+                </article>
             </div>
-            <div>
-                <img src="./imagenes/avatar.lebron.png" alt="Perfil Lebron">
-                <div>
-                    <h3>Lebron</h3>
-                    <p>
-                        Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris,
-                        ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus.
-                    </p>
-                </div>
-
-            </div>
-            <div>
-                <img src="./imagenes/avatar-navarro.png" alt="Perfil Navarro">
-                <div>
-                    <h3>Navarro</h3>
-                    <p>
-                        Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris,
-                        ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus.
-                    </p>
-                </div>
-
-            </div>
-            <button>More</button>
+            <button class="btn">More</button>
         </section>
-        <section>
+        <section class=" flex flex-around container-pros">
             <h2>Get to know the best teams of the year</h2>
-            <button>Go for it</button>
+            <button class="btn btn-secondary btn-shadow">Go for it</button>
         </section>
 
     </main>
-    <footer>
-        <div>
-            <img src="./imagenes/logo.svg" alt="">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="./imagenes/icon-facebook.svg" alt="icon-facebook">
-            </a>
-            <a href="https://www.youtube.com/" target="_blank">
-                <img src="./imagenes/icon-youtube.svg" alt="icon-youtube">
-            </a>
-            <a href="https://www.twitter.com/" target="_blank">
-                <img src="./imagenes/icon-twitter.svg" alt="icon-twitter">
-            </a>
-            <a href="https://www.pinterest.es/" target="_blank">
-                <img src="./imagenes/icon-pinterest.svg" alt="icon-pinterest">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="./imagenes/icon-instagram.svg" alt="icon-instagram">
-            </a>
-        </div>
-        <div>
-            <a href="">Home</a>
-            <a href="">Pircing</a>
-            <a href="">Products</a>
-            <a href="">About Us</a>
-            <div>
+    <footer class="flex-column">
+        <div class=" flex container-footer">
+            <div class="flex-column logo-social">
+                <img src="./imagenes/LogoFooter.svg" alt="Logo de pagina" class="logo-page">
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./imagenes/icon-facebook.svg" alt="icon-facebook">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="./imagenes/icon-youtube.svg" alt="icon-youtube">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="./imagenes/icon-twitter.svg" alt="icon-twitter">
+                    </a>
+                    <a href="https://www.pinterest.es/" target="_blank">
+                        <img src="./imagenes/icon-pinterest.svg" alt="icon-pinterest">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./imagenes/icon-instagram.svg" alt="icon-instagram">
+                    </a>
+                </div>
+
+            </div>
+            <div class="flex-column spacing">
+                <a href="">Home</a>
+                <a href="">Pircing</a>
+                <a href="">Products</a>
+                <a href="">About Us</a>
+            </div>
+            <div class="flex-column spacing">
                 <a href=""> Trainning</a>
                 <a href="">Community</a>
                 <a href="">Privacy Policy</a>
             </div>
+            <div class="flex-column spacing">
+                <form action="">
+                    <input type="email">
+                    <button>Go</button>
+                </form>
+            </div>
         </div>
-        <div>
-            <form action="">
-                <input type="email">
-            </form>
-            <button>Go</button>
-            <span>Copyright 2020. All Rights Reserved</span>
-        </div>
+
+        <span>Copyright 2020. All Rights Reserved</span>
     </footer>
 </body>
 

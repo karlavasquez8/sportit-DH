@@ -1,0 +1,196 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+}
+
+:root {
+    --color-primary: rgba(35, 44, 80, 1);
+    --color-secondary: rgba(255, 255, 255, 1);
+    --color-tertiary: rgba(185, 185, 193, 1);
+    --color-card: rgba(250, 250, 250, 1);
+    --color-section: rgba(139, 72, 191, 1);
+    --color-footer: rgba(30, 30, 38, 1);
+
+    --color-neutro:
+
+}
+
+h1 {
+    font-size: 45px;
+    color: rgba(63, 72, 104, 1);
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 16px;
+    color: rgba(63, 72, 104, 1);
+    margin: 0.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-around {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-page {
+    width: 100%;
+    font-size: 13px;
+    height: 174px;
+    color: var(--color-primary);
+}
+
+.list-nav {
+    list-style: none;
+}
+
+.list-nav li {
+    padding: 0 0.5rem;
+}
+
+.container-section {
+    align-items: flex-end;
+    gap: 2rem;
+    text-align: end;
+    max-width: 450px;
+    padding-bottom: 2rem;
+}
+
+
+.container-pros {
+    background-color: var(--color-section);
+    color: var(--color-secondary);
+    width: 100%;
+    height: 168px;
+}
+
+.text-description {
+    max-width: 450px;
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--color-section);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.8rem 2.5rem;
+    /* width: 134px; */
+}
+
+.btn-shadow {
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-section)
+}
+
+
+.container-cards {
+    background-color: var(--color-card);
+    gap: 4rem;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    max-width: 530px;
+    min-width: 530px;
+    width: 100%;
+    gap: 1.5rem;
+    color: var(--color-primary);
+    font-size: 16px;
+    height: 158px;
+}
+
+.container-text-card {
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.text-card {
+    color: var(--color-tertiary);
+}
+
+.number-card {
+    background-color: var(--color-section);
+    color: var(--color-secondary);
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    height: 20px;
+
+}
+
+.container3 {
+    gap: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.container-article {
+    background-color: var(--color-card);
+    max-width: 1300px;
+
+}
+
+.deport-article {
+    max-height: 250px;
+    align-items: center;
+    text-align: center;
+    color: var(--color-tertiary);
+
+}
+
+footer {
+    background-color: var(--color-footer);
+    height: 248px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.container-footer {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.spacing {
+    gap: 0.5rem
+}
+
+.logo-social {
+    justify-content: space-between;
+}
+
+.perfil-depor {
+    transform: translateY(-50%);
+}
