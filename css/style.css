@@ -8,30 +8,36 @@ body {
 }
 
 :root {
-    --color-primary: rgba(35, 44, 80, 1);
+    --color-primary: rgba(139, 72, 191, 1);
     --color-secondary: rgba(255, 255, 255, 1);
-    --color-tertiary: rgba(185, 185, 193, 1);
-    --color-card: rgba(250, 250, 250, 1);
-    --color-section: rgba(139, 72, 191, 1);
-    --color-footer: rgba(30, 30, 38, 1);
+    --color-tertiary: rgba(35, 44, 80, 1);
+    --color-neutro1: rgba(185, 185, 193, 1);
+    --color-neutro2: rgba(30, 30, 38, 1);
+    --color-neutro3: rgba(250, 250, 250, 1);
 
-    --color-neutro:
 
 }
 
 h1 {
     font-size: 45px;
-    color: rgba(63, 72, 104, 1);
+    color: var(--color-tertiary);
+    margin: 0;
 }
 
 h2 {
     font-size: 36px;
+    max-width: 393px;
+    margin: 0;
 }
 
 h3 {
     font-size: 16px;
     color: rgba(63, 72, 104, 1);
     margin: 0.5rem;
+}
+
+p {
+    font-weight: 400;
 }
 
 .flex {
@@ -54,10 +60,9 @@ h3 {
 }
 
 .header-page {
-    width: 100%;
     font-size: 13px;
     height: 174px;
-    color: var(--color-primary);
+    color: var(--color-tertiary);
 }
 
 .list-nav {
@@ -66,6 +71,20 @@ h3 {
 
 .list-nav li {
     padding: 0 0.5rem;
+    color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+.page-height {
+    height: calc(100vh - 174px);
+
+    width: auto;
+}
+
+.page-size {
+    max-width: 1366px;
+    width: 100%;
+    height: 100%;
 }
 
 .container-section {
@@ -78,10 +97,17 @@ h3 {
 
 
 .container-pros {
-    background-color: var(--color-section);
+    background-color: var(--color-primary);
     color: var(--color-secondary);
-    width: 100%;
     height: 168px;
+}
+
+.section-center {
+    max-width: 1065px;
+    width: 100%;
+    max-height: 96px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .text-description {
@@ -90,13 +116,13 @@ h3 {
 }
 
 .btn {
-    background-color: var(--color-section);
+    background-color: var(--color-primary);
     color: var(--color-secondary);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     padding: 0.8rem 2.5rem;
-    /* width: 134px; */
+    transition: transform 0.3s ease
 }
 
 .btn-shadow {
@@ -105,12 +131,26 @@ h3 {
 
 .btn-secondary {
     background-color: var(--color-secondary);
-    color: var(--color-section)
+    color: var(--color-primary)
+}
+
+.btn-form {
+    padding: 0.8rem 1rem;
+}
+
+.btn-secondary:hover {
+    color: var(--color-secondary);
+    transform: scale(1.2)
+}
+
+.btn:hover {
+    background-color: rgba(139, 72, 191, 0.7);
+    transform: scale(1.2)
 }
 
 
 .container-cards {
-    background-color: var(--color-card);
+    background-color: var(--color-neutro3);
     gap: 4rem;
     padding: 2rem;
     justify-content: center;
@@ -123,22 +163,17 @@ h3 {
     min-width: 530px;
     width: 100%;
     gap: 1.5rem;
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     font-size: 16px;
     height: 158px;
 }
 
-.container-text-card {
-    gap: 1rem;
-    padding-top: 0.5rem;
-}
-
 .text-card {
-    color: var(--color-tertiary);
+    color: var(--color-neutro1);
 }
 
 .number-card {
-    background-color: var(--color-section);
+    background-color: var(--color-primary);
     color: var(--color-secondary);
     border-radius: 30px;
     padding: 0.5rem 1.5rem;
@@ -148,13 +183,14 @@ h3 {
 
 .container3 {
     gap: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    color: var(--color-tertiary);
+    height: 100vh;
 }
 
 .container-article {
-    background-color: var(--color-card);
+    background-color: var(--color-neutro3);
     max-width: 1300px;
+    width: 100%;
 
 }
 
@@ -162,15 +198,14 @@ h3 {
     max-height: 250px;
     align-items: center;
     text-align: center;
-    color: var(--color-tertiary);
+    color: var(--color-neutro1);
 
 }
 
 footer {
-    background-color: var(--color-footer);
+    background-color: var(--color-neutro2);
     height: 248px;
-    align-items: flex-end;
-    justify-content: center;
+    ;
 }
 
 footer a {
@@ -179,6 +214,7 @@ footer a {
 }
 
 .container-footer {
+    max-width: 1366px;
     width: 100%;
     justify-content: space-around;
 }
@@ -193,4 +229,20 @@ footer a {
 
 .perfil-depor {
     transform: translateY(-50%);
+}
+
+form input:first-child {
+    border-radius: 50px;
+    border: none;
+    padding: 15px 20px;
+
+}
+
+.copyrigth-footer {
+    padding-inline-end: 5rem;
+}
+
+.flex-footer {
+    align-items: flex-end;
+    color: rgba(140, 140, 148, 1);
 }
