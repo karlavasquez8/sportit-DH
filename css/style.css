@@ -38,6 +38,7 @@ h3 {
 
 p {
     font-weight: 400;
+    margin: 0;
 }
 
 header a {
@@ -80,12 +81,6 @@ header a {
     cursor: pointer;
 }
 
-.page-height {
-    height: calc(100vh - 174px);
-
-    width: auto;
-}
-
 .page-size {
     max-width: 1366px;
     width: 100%;
@@ -96,7 +91,7 @@ header a {
     align-items: flex-end;
     gap: 2rem;
     text-align: end;
-    max-width: 450px;
+    max-width: 400px;
     padding-bottom: 2rem;
 }
 
@@ -119,6 +114,7 @@ header a {
     max-width: 450px;
     width: 100%;
 }
+
 
 .btn {
     background-color: var(--color-primary);
@@ -165,7 +161,7 @@ header a {
 
 .card {
     max-width: 530px;
-    min-width: 530px;
+    min-width: 400px;
     width: 100%;
     gap: 1.5rem;
     color: var(--color-tertiary);
@@ -175,6 +171,7 @@ header a {
 
 .text-card {
     color: var(--color-neutro1);
+    padding-left: 4rem;
 }
 
 .number-card {
@@ -193,24 +190,26 @@ header a {
 }
 
 .container-article {
-    background-color: var(--color-neutro3);
+    /* background-color: var(--color-neutro3); */
     max-width: 1300px;
     width: 100%;
 
 }
 
 .deport-article {
+    background-color: var(--color-neutro3);
     max-height: 250px;
     align-items: center;
     text-align: center;
     color: var(--color-neutro1);
+    padding-bottom: 1rem;
 
 }
 
 footer {
     background-color: var(--color-neutro2);
-    height: 248px;
-    ;
+    max-height: 248px;
+    height: 100%;
 }
 
 footer a {
@@ -218,14 +217,28 @@ footer a {
     text-decoration: none;
 }
 
+.list-footer {
+    justify-content: space-between;
+    /* gap: 7rem; */
+}
+
 .container-footer {
     max-width: 1366px;
     width: 100%;
     justify-content: space-around;
+    padding: 2rem 0;
 }
 
 .spacing {
     gap: 0.5rem
+}
+
+.spacing2 {
+    padding: 2rem;
+}
+
+.spacing3 {
+    gap: 5rem
 }
 
 .logo-social {
@@ -243,11 +256,19 @@ form input:first-child {
 
 }
 
-.copyrigth-footer {
-    padding-inline-end: 5rem;
+.copyright-footer {
+    padding: 1rem 4rem;
 }
 
 .flex-footer {
     align-items: flex-end;
     color: rgba(140, 140, 148, 1);
+}
+
+.logo-footer {
+    width: 127px;
+}
+
+.menu-toggle {
+    display: none;
 }

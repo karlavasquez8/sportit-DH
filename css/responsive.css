@@ -1,0 +1,182 @@
+@import url(style.css);
+
+@media(min-width: 375px) and (max-width: 640px) {
+    article p {
+        padding-inline: 1rem;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        display: block;
+    }
+
+    .menu-toggle img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu-toggle.active {
+        transform: rotate(90deg);
+    }
+
+    .menu-toggle.active+.menu {
+        display: block;
+    }
+
+    .header-page {
+        height: 60px;
+    }
+
+    .btn-contact-nav {
+        display: none;
+    }
+
+    .responsive-column {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .responsive-column img {
+        max-width: 400px;
+        width: 100%;
+
+    }
+
+    .page-height {
+        height: 100%;
+    }
+
+    .container-pros {
+        background-color: rgba(60, 221, 243, 1);
+        min-height: 366px;
+        height: 100%;
+    }
+
+    .section-center {
+        flex-direction: column;
+        min-height: 366px;
+        height: 100%;
+        gap: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .text-description {
+        margin: 0;
+    }
+
+    .text-align-section {
+        max-width: 324px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .btn-secondary {
+        background-color: var(--color-tertiary);
+        color: var(--color-neutro3);
+    }
+
+    .card {
+        min-width: initial;
+    }
+
+    .header-card {
+        background-color: rgba(139, 72, 191, 0.3);
+        border-radius: 30px 0 0 30px
+    }
+
+    .container-cards {
+        padding: 2rem 0 2rem 2rem;
+    }
+
+    .text-card {
+        padding: 0;
+    }
+
+    .deport-article {
+        max-width: 445px;
+        width: 100%;
+    }
+
+    .container-article {
+        justify-content: center;
+    }
+
+    #perfil-sanjo,
+    #perfil-navarro {
+        display: none;
+    }
+
+    .logo-social {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        max-height: 100%;
+    }
+
+    .container-footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .align-section {
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+    form input:first-child {
+        padding: 15px 50px;
+    }
+
+    .spacing-gap2 {
+        gap: 3rem
+    }
+
+    .logo-footer {
+        padding: 2rem;
+    }
+
+    .copyright-footer {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .copyright-footer p {
+        text-align: center;
+    }
+
+
+
+
+
+
+}

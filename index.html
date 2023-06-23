@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>Sportit</title>
 </head>
 
@@ -16,7 +18,10 @@
     <header class=" flex flex-center header-page">
         <div class=" flex flex-around page-size">
             <img src="./imagenes/logo.svg" alt="Logo Sportit">
-            <nav>
+            <button class="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+            <nav class="menu">
                 <ul class=" flex list-nav">
                     <li>
                         <a href="#sports"> Sports</a>
@@ -34,15 +39,17 @@
                         <a href="#community">Comunnity</a>
                     </li>
                 </ul>
+
             </nav>
-            <button class="btn btn-shadow">Contact</button>
+            <button class="btn btn-shadow btn-contact-nav">Contact</button>
+
         </div>
 
     </header>
     <main>
         <section id="sports" class="flex flex-center page-height ">
             <div class="page-size ">
-                <div class=" flex flex-center flex-around">
+                <div class=" flex flex-around spacing2 responsive-column">
                     <img src="./imagenes/padel-intro.png" alt="Tenista">
                     <div class="flex-column container-section">
                         <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
@@ -68,22 +75,25 @@
             </div>
         </section>
         <section id="about" class="flex container-cards">
-            <div class=" flex card">
-                <span class="number-card">01</span>
-                <div class=" flex-column">
+            <div class="flex-column card">
+                <div class="flex header-card">
+                    <span class="number-card">01</span>
                     <h3>Track company-wide progress:</h3>
+                </div>
+                <div>
                     <p class="text-card">
                         Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
                         Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla.
                         Etiam vel orci rutrum, placerat quam eget, consequat dolor.
                     </p>
                 </div>
-
             </div>
-            <div class=" flex card">
-                <span class="number-card">02</span>
-                <div class=" flex-column ">
+            <div class="flex-column card">
+                <div class="flex header-card">
+                    <span class="number-card">02</span>
                     <h3>Advance built-in reports</h3>
+                </div>
+                <div>
                     <p class="text-card">
                         Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
                         Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla.
@@ -92,10 +102,12 @@
                 </div>
 
             </div>
-            <div class=" flex card">
-                <span class="number-card">03</span>
-                <div class=" flex-column">
+            <div class="flex-column card">
+                <div class="flex header-card">
+                    <span class="number-card">03</span>
                     <h3>Everything you need in one place</h3>
+                </div>
+                <div>
                     <p class="text-card">
                         Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
                         Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla.
@@ -107,7 +119,7 @@
         <section id="trainnings" class=" flex-column flex-center container3">
             <h2>Best of the month</h2>
             <div class=" flex container-article">
-                <article class=" flex-column deport-article">
+                <article id="perfil-sanjo" class=" flex-column deport-article ">
                     <img src="./imagenes/avatar-sanyo.png" alt="Perfil Sanyo " class="perfil-depor">
                     <div>
                         <h3>Sanyo</h3>
@@ -118,7 +130,7 @@
                         </p>
                     </div>
                 </article>
-                <article class=" flex-column deport-article">
+                <article id="perfil-lebron" class=" flex-column deport-article">
                     <img src="./imagenes/avatar.lebron.png" alt="Perfil Lebron" class="perfil-depor">
                     <div>
                         <h3>Lebron</h3>
@@ -129,7 +141,7 @@
                         </p>
                     </div>
                 </article>
-                <article class=" flex-column deport-article">
+                <article id="perfil-navarro" class=" flex-column deport-article">
                     <img src="./imagenes/avatar-navarro.png" alt="Perfil Navarro" class="perfil-depor">
                     <div>
                         <h3>Navarro</h3>
@@ -144,7 +156,7 @@
             <button class="btn">More</button>
         </section>
         <section class=" flex flex-center container-pros">
-            <div class="flex section-center">
+            <div class="flex section-center text-align-section">
                 <h2>Get to know the best teams of the year</h2>
                 <button class="btn btn-secondary btn-shadow">Go for it</button>
             </div>
@@ -154,9 +166,9 @@
     </main>
     <footer id="community" class="flex-column flex-center flex-footer">
         <div class=" flex container-footer">
-            <div class="flex-column logo-social">
-                <img src="./imagenes/LogoFooter.svg" alt="Logo de pagina" class="logo-page">
-                <div class="flex spacing">
+            <div class="flex-column align-section logo-social">
+                <img class="logo-footer spacing" src="./imagenes/LogoFooter.svg" alt="Logo de pagina" class="logo-page">
+                <div class="flex  spacing spacing-gap2">
                     <a href="https://www.facebook.com/" target="_blank">
                         <img src="./imagenes/icon-facebook.svg" alt="icon-facebook">
                     </a>
@@ -175,28 +187,33 @@
                 </div>
 
             </div>
-            <div class="flex-column spacing">
-                <a href="#home" target="_blank">Home</a>
-                <a href="#pircing" target="_blank">Pircing</a>
-                <a href="#products" target="_blank">Products</a>
-                <a href="#about" target="_blank">About Us</a>
+            <div class="flex spacing3 list-footer">
+                <div class="flex-column spacing align-section">
+                    <a href="" target="_blank">Home</a>
+                    <a href="" target="_blank">Pircing</a>
+                    <a href="" target="_blank">Products</a>
+                    <a href="" target="_blank">About Us</a>
+                </div>
+                <div class="flex-column spacing">
+                    <a href="trainning" target="_blank"> Trainning</a>
+                    <a href="community" target="_blank">Community</a>
+                    <a href="privacy" target="_blank">Privacy Policy</a>
+                </div>
+
             </div>
-            <div class="flex-column spacing">
-                <a href="trainning" target="_blank"> Trainning</a>
-                <a href="community" target="_blank">Community</a>
-                <a href="privacy" target="_blank">Privacy Policy</a>
-            </div>
-            <div class="flex-column spacing">
+            <div class="flex-column spacing align-section">
                 <form action="enviar_email" method="POST">
                     <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                         placeholder="Update in your inbox...">
                     <button type="submit" class="btn btn-form">Go</button>
                 </form>
             </div>
+
         </div>
-        <div class="copyrigth-footer">
+        <div class="copyright-footer">
             <p>Copyright 2020. All Rights Reserved</p>
         </div>
+
 
     </footer>
 </body>
