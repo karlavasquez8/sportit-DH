@@ -63,9 +63,10 @@
 
     }
 
+    /* 
     .page-height {
         height: 100%;
-    }
+    } */
 
     .container-pros {
         background-color: rgba(60, 221, 243, 1);
@@ -96,7 +97,7 @@
 
     .btn-secondary {
         background-color: var(--color-tertiary);
-        color: var(--color-neutro3);
+        color: var(--color-secondary);
     }
 
     .card {
@@ -173,10 +174,5 @@
     .copyright-footer p {
         text-align: center;
     }
-
-
-
-
-
 
 }

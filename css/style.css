@@ -1,7 +1,5 @@
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
-    /* margin: 0;
-    padding: 0; */
     margin: 0 auto;
     padding: 0;
 }
@@ -48,7 +46,6 @@ a:hover {
 header a {
     text-decoration: none;
     color: var(--color-tertiary);
-
 }
 
 .flex {
@@ -153,14 +150,12 @@ header a {
     transform: scale(1.2)
 }
 
-
 .container-cards {
     background-color: var(--color-neutro3);
     gap: 3rem;
     padding: 2rem;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .card {
@@ -184,7 +179,6 @@ header a {
     border-radius: 30px;
     padding: 0.5rem 1.5rem;
     height: 20px;
-
 }
 
 .container3 {
@@ -195,10 +189,8 @@ header a {
 }
 
 .container-article {
-    /* background-color: var(--color-neutro3); */
     max-width: 1300px;
     width: 100%;
-
 }
 
 .deport-article {
@@ -208,7 +200,6 @@ header a {
     text-align: center;
     color: var(--color-neutro1);
     padding-bottom: 1rem;
-
 }
 
 footer {
@@ -224,7 +215,6 @@ footer a {
 
 .list-footer {
     justify-content: space-between;
-    /* gap: 7rem; */
 }
 
 .container-footer {
@@ -258,11 +248,9 @@ form input:first-child {
     border-radius: 50px;
     border: none;
     padding: 15px 20px;
-
 }
 
 .copyright-footer {
-    /* padding: 1rem 4rem; */
     color: rgba(140, 140, 148, 1);
     max-width: 1108px;
     width: 100%;
