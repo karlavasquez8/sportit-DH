@@ -4,7 +4,6 @@ body {
     padding: 0; */
     margin: 0 auto;
     padding: 0;
-    max-width: 1440px;
 }
 
 :root {
@@ -44,6 +43,7 @@ p {
 a:hover {
     color: var(--color-neutro1);
 }
+
 
 header a {
     text-decoration: none;
@@ -156,7 +156,7 @@ header a {
 
 .container-cards {
     background-color: var(--color-neutro3);
-    gap: 4rem;
+    gap: 3rem;
     padding: 2rem;
     justify-content: center;
     flex-wrap: wrap;
@@ -190,6 +190,7 @@ header a {
 .container3 {
     gap: 3rem;
     color: var(--color-tertiary);
+    max-height: 768px;
     height: 100vh;
 }
 
@@ -261,8 +262,17 @@ form input:first-child {
 }
 
 .copyright-footer {
-    padding: 1rem 4rem;
+    /* padding: 1rem 4rem; */
+    color: rgba(140, 140, 148, 1);
+    max-width: 1108px;
+    width: 100%;
+    text-align: end;
 }
+
+.copyright-footer p {
+    padding: 2rem 0
+}
+
 
 .flex-footer {
     align-items: flex-end;
